@@ -80,7 +80,87 @@ while True:
         break
             
 
-Q5.
+Q5.Login system
+
+CorrectUsername = "admin"
+
+CorrectPassword = "1234"
+
+
+
+
+while True:
+    Username = input("Enter your username")
+    Password = input("Enter your password")
+    if Username != CorrectUsername or Password != CorrectPassword:
+        print("Incorrect username or password")
+    else:
+        print("Access granted")
+        break
+
+Q6.Login system with limited tries:
+    
+
+
+CorrectUsername = "admin"
+
+CorrectPassword = "1234"
+
+
+
+for i in range(3):
+    Username = input("Enter your username")
+    
+    Password = input("Enter your password")
+    if Username == CorrectUsername and Password == CorrectPassword:
+        print("Access granted")
+        break
+    else:
+        print("Incorrect username or password please try again")
+else:
+    print("You are blocked")
+     
+
+
+Q7.Restaurant ordering system:
+    
+
+print("Welcome to our restaurant! our menu includes:")
+print("burger, pizza, pasta, chicken breast and potatoes")
+
+receipt = []
+
+foods = ["burger","pizza","pasta","chicken breast","potatoes"]
+
+while True:
+        order = input("Which meal do you want to order?")
+        if order in foods:
+            receipt.append(order)
+            print("Selected meal is available order has been submitted")
+        
+        elif order == "order":
+            print("Orders have been submitted")
+            break 
+for i in receipt:
+        print (i)
+
+
+
+
+Q8.Simple chatbot
+
+
+
+print("Hello")
+while True:
+    user = input("")
+    if user == "bye":
+        print("bye")
+        break
+    else:
+        print("Chatbot's response")
+
+'''
 
 
 
